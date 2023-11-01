@@ -19,7 +19,7 @@ const Ex3 = (props) => {
   return (
     <div className='row'>
         <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <h2 className="bg-warning text-white p-2 text-center">Example-3</h2>
+            <h2 className="bg-secondary text-white p-2 text-center">Example-3</h2>
         </div>
         <div className="col">
             <div className="border lead p-3 text-center">
