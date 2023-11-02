@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("PolarisProfileTabTaggedPhotosConstants",[],(function(a,b,c,d,e,f){"use strict";a="tagged";f.TAGGED_TAB_ID=a}),66);
+__d("PolarisInstantPostModal.react",["PolarisPostModalInternal.react","PolarisProfileTabTaggedPhotosConstants","polarisPostModalHelpers","react","usePolarisPost"],(function(a,b,c,d,e,f,g){"use strict";var h,i=h||d("react");function a(a){var b,e=!1,f=!1,g=d("polarisPostModalHelpers").getModalPageIdFromAnalyticsContext(a.analyticsContext)==="profilePageModal";b=((b=a.modalEntryPath)==null?void 0:b.endsWith("/"+d("PolarisProfileTabTaggedPhotosConstants").TAGGED_TAB_ID+"/"))===!0;g&&!b&&(e=!0);g=d("usePolarisPost").usePost(a.postId,function(a){return a.isVideo});b&&g===!0&&(f=!0);return i.jsx(c("PolarisPostModalInternal.react"),babelHelpers["extends"]({},a,{showLoadingShimmer:f,skipMediaInfo:e}))}a.displayName=a.name+" [from "+f.id+"]";g["default"]=a}),98);

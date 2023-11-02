@@ -1,0 +1,337 @@
+
+.image{
+  height: 100px;
+  width: 170px;
+}
+.suk{
+  width: 280px;
+  border-radius: 20px;
+  margin-top: 70px;
+  margin-bottom: 180px;
+}
+.from{
+  height: 60px;
+}
+.main-banner .caption form input {
+  max-width: 450px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 0.1px solid white;
+  padding: 0px 25px;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.button{
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  background-color: transparent;
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0px 25px;
+  border: 0.1px solid white;
+  border-radius: 25px;
+  /* position: absolute;
+  right: 0;
+  top: 0; */
+  transition: all .3s;
+}
+.button:hover{
+  background-color: #6c757d;
+  color: white;
+  border: 1px solid #6c757d;
+}
+.main-banner{
+  background: url(../src/Components/images/380293357_555824343337107_7302214742335346441_n.jpeg) no-repeat;
+  background-size: cover;
+  border-radius: 0px 0px 200px 200px;
+}
+
+.features {
+  margin-top: -80px;
+}
+
+.features .item {
+  padding: 35px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features .item h4 {
+  font-size: 17px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.features .item .image {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  text-align: center;
+  line-height: 90px;
+  background-color: #0071f8;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.features .item:hover .image {
+  background-color: #6c757d;
+}
+.dec{
+  text-decoration: none;
+}
+
+.trending{
+  margin-top: 80px;
+}
+.section-heading h2{
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+
+.trending .main-button {
+  margin-top: 32px;
+  text-align: right;
+}
+
+.trending .item  {
+  background-color: #eeeeee;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.trending .item .thumb {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+
+.trending .item .down-content {
+  padding: 25px;
+}
+
+.trending .item .down-content span.category {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.trending .item .down-content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.trending .item .down-content a {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #ee626b;
+  color: #fff;
+  border-radius: 50%;
+  right: 25px;
+  bottom: 25px;
+  transition: all .3s;
+}
+
+.trending .item:hover .down-content h4 {
+  color: #6c757d;
+}
+
+.trending .item:hover .down-content a {
+  background-color: #6c757d;
+}
+
+.caption{
+  padding: 20px;
+  background-color: rgba(180, 161, 161, 0.5);
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+}
+#searchText::placeholder {
+  color: white !important;
+  opacity: 1;
+}
+
+.categories .main-button {
+  margin-top: 30px;
+}
+
+.categories .item  {
+  background-color: #0071f8;
+  position: relative;
+  border-radius: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.categories .item:hover{
+  background-color: #6c757d;
+}
+
+.categories .item .thumb {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.categories .item h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  padding: 22px;
+  margin-bottom: 0px;
+}
+.catt{
+  margin-top: 40px;
+}
+
+.cta {
+  position: relative;
+}
+.cattt{
+  margin-bottom: 50px;
+}
+.cta::after {
+  background: url(./Components/images/shanks.jpg) no-repeat;
+  background-size: cover;
+  max-width: 550px;
+  max-height: 510px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: '';
+  border-radius: 25px;
+  left: 50%;
+  transform: translateX(-275px);
+  top: 0;
+  z-index: -1;
+  margin-top: 90px;
+}
+
+.cta .shop {
+  margin-top: 160px;
+  background-color: #bdb5b5;
+  border-radius: 25px;
+  padding: 80px;
+}
+
+.cta .shop .section-heading {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.cta .shop p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cta .shop .main-button {
+  margin-top: 50px;
+}
+
+.cta .subscribe {
+  background-color: #bdb5b5;
+  border-radius: 25px;
+  padding: 80px 60px;
+}
+
+.cta .subscribe .section-heading {
+  margin-bottom: 0px;
+}
+
+.cta .subscribe form {
+  position: relative;
+  max-width: 100%;
+}
+
+.cta .subscribe form input {
+  max-width: 100%;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 25px;
+  background-color: #fff;
+  border: none;
+  padding: 0px 25px;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.cta .subscribe form button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0px 25px;
+  border: 0.1px solid grey;
+  border-radius: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .3s;
+}
+
+.cta .subscribe form button:hover {
+  background-color: #6c757d;
+}
+.text{
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 150px;
+  background-color: #0071f8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../src/Components/images/1600w-qt_TMRJF4m0.webp);
+  min-height: 150px;
+  border-radius: 150px 150px 0px 0px;
+}
+
+footer p {
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer p a {
+  color: #fff;
+  transition: all .3s;
+  position: relative;
+  z-index: 3;
+}
+
+footer p a:hover {
+  opacity: 0.75;
+}
+@media (max-width: 1000px){
+  .shop ,.metro {
+    display: none;
+  }
+}
