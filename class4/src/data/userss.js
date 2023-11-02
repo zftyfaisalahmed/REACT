@@ -1,4 +1,5 @@
-const Users = [
+
+const users = [
     {
         id: 1,
         name : "ram",
@@ -11,15 +12,15 @@ const Users = [
         bank : [
             {
                 accNo: 56789,
-                bankName : "rohan",
-                email: "rohan@gmail.com",
+                bankName : "canera",
+                type: "Saving",
             },
             {
                 accNo: 567890,
-                bankName : "kahs",
-                email: "kahs@gmail.com",
-            },
-        ],
+                bankName : "idfc",
+                type: "Current",
+            }
+        ]
     },
     {
         id: 2,
@@ -34,13 +35,15 @@ const Users = [
             {
                 accNo: 5698765,
                 bankName : "hdfc",
-                email: "rohan@gmail.com",
+                type: "Current",
             },
             {
                 accNo: 56789056789,
                 bankName : "sbi",
-                email: "kahs@gmail.com",
-            },
-        ],
+                type: "Saving",
+            }
+        ]
     }
-]
+];
+
+export default users

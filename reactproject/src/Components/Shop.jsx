@@ -32,7 +32,7 @@ function Shop(){
                         </div>
                         <div class="search-input">
                             <form id="subscribe" action="#">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email..." />
+                            <input type="email" class="form-control" placeholder="Your email..." />
                             <button type="submit">Subscribe Now</button>
                             </form>
                         </div>
