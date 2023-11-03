@@ -1,44 +1,40 @@
 import './App.css';
-import data from './data/userss'
+import User from './Components/user';
+import users from './data/userss';
+// import data from './data/userss'
+// import App from './../../reactproject/src/App';
 
 function Detail(){
     return (
-       data.map((users) =>       
-        <div className="col">
-            <div className="bg-secondary text-white p-2 text-center border lead p-3 text-center">
-                <h3>Personal Details</h3>
-            </div>
-                
-            <div className='text-center'>
-                <p><b>Name :</b>{users.name}</p>
-                <p><b>Id :</b>{users.id}</p>
-                <p><b>Email :</b>{users.email}</p>
-                <p><b>Age : </b>{users.age}</p>
-                <p><b>Address : City-</b>{users.address.city}</p>
-
-                <p><b>Zipcode - </b>{users.address.pin}</p>
-<hr />
-                <h2 className="text-decoration-underline">Banking Details</h2>
-                 <h3 className="text-decoration-underline">Bank-1</h3><br />
-                 <p>
-                     <b>Account Number : </b>{users.bank[0].accNo}<br/>
-                     <b>Bank Name : </b>{users.bank[0].bankName}<br/>
-                     <b>Account Type: </b>{users.bank[0].type}<br/>
-                 </p> 
-<hr />
-                 <h2 className="text-decoration-underline">Banking Details</h2>
-                 <h3 className="text-decoration-underline">Bank-2</h3><br />
-                 <p>
-                     <b>Account Number : </b>{users.bank[1].accNo}<br/>
-                     <b>Bank Name : </b>{users.bank[1].bankName}<br/>
-                     <b>Account Type: </b>{users.bank[1].type}<br/>
-                 </p> 
+        <div className="container">
+                  <div className="row">
+                         <div className="col-sm-12 col-lg-12 col-md-12 col-xl-12 col-xxl-12">
+                             <div className="bg-success text-center text-white p-3 rounded shadow">
+                                 <h1>FUNCTIONAL COMPONENTS PROPS</h1>
+                             </div>
+                         </div>
+                    </div>
+                     {/* <users></users> */}
+                    <User userData= {users} />
                 </div>
-            </div>
-    
     
        )
-    );
 }
 
+// function App(){
+//     return(
+//         <div className="container">
+//             <div className="row">
+//                 <div className="col-sm-12 col-lg-12 col-md-12 col-xl-12 col-xxl-12">
+//                     <div className="bg-success text-center text-white p-3 rounded shadow">
+//                         <h1>FUNCTIONAL COMPONENTS PROPS</h1>
+//                     </div>
+//                 </div>
+//             </div>
+//             {/* <users></users> */}
+//         </div>
+//     )
+// }
+
 export default Detail;
+// export default App;

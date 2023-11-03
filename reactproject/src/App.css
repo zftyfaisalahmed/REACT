@@ -325,6 +325,7 @@ footer p a {
   transition: all .3s;
   position: relative;
   z-index: 3;
+  text-decoration: none;
 }
 
 footer p a:hover {
