@@ -19,7 +19,7 @@ function User(props){
                 <p><b>Zipcode - </b>{users.address.pin}</p>
 <hr />
                 <h2 className="text-decoration-underline">Banking Details</h2>
-                 <h3 className="text-decoration-underline">Bank-1</h3><br />
+                <h3 className="text-decoration-underline">Bank-1</h3><br />
                  <p>
                      <b>Account Number : </b>{users.bank[0].accNo}<br/>
                      <b>Bank Name : </b>{users.bank[0].bankName}<br/>

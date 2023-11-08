@@ -1,7 +1,10 @@
 
 .image{
   height: 100px;
-  width: 170px;
+  width: 150px;
+}
+.navbar{
+  margin: 0px 70px;
 }
 .suk{
   width: 280px;
