@@ -1,26 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-import { Fragment } from "react";
+import Inline from './Components/Inline-style/Inline';
+import ObjectStyle from './Components/Object-style/ObjectStyle';
+import ObjectStyle1 from './Components/Object-style/ObjectStyle1';
+import StyledComponent from './Components/styled-components/StyledComponent';
 
 function App() {
-  return <Fragment>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12'>
-              <h1 className='display-3 text-center text-warnibg'>
-                Handling events in React Component
-              </h1>
-
-              <div className='lead my-3 p-3 border'>
-                <p><b> 1) Call an inline function in an onclick handler </b></p>
-                <button className='btn btn-outline-info' onClick={()=>{
-                  alert("Hello")
-                }}>Click-app</button>
-              </div>
-          </div>
+  return (
+    <div>
+        <div className="container-fluid">
+            <div className="row">
+                <div className="col">
+                    <h1 className="display-4 text-dark text-center rounded">
+                       STYLE IN REACT
+                    </h1>
+                    <h2 className='globalClass'>INDEX.CSS (GLOBAL CSS FILE)</h2>
+                    <h2 className="appClass">APP.CSS (APP CSS FILE : PARENT COMPONENT)</h2>
+                </div>
+            </div>
         </div>
-      </div>
-  </Fragment>
+        <Inline></Inline>
+        <ObjectStyle></ObjectStyle>
+        <ObjectStyle1></ObjectStyle1>
+        <StyledComponent></StyledComponent>
+    </div>
+  );
 }
 
 export default App;
