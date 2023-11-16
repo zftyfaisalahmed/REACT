@@ -25,7 +25,7 @@ class Ex4 extends Component {
                             <div className="lead my-3 p-3 border">
                                 <p>
                                     <b>
-                                        (6) Class Components Event Listener
+                                        (6) Class Components Event Listener / Binding inside the constructor
                                     </b>
                                 </p>
                                 <p>
