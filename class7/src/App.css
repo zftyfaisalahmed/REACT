@@ -44,7 +44,7 @@ button{
   padding: 20px 40px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 10%;
+  /* border-radius: 20px; */
   font-weight: bold;
   font-size: 20px;
   transition: 1s ease-in-out;
@@ -57,4 +57,8 @@ button:hover{
 table, td{
   border-collapse: collapse;
   padding: 5px;
+  /* border-radius: 20px; */
+}
+table>tr>td>button{
+  border-radius: 20px;
 }
