@@ -20,3 +20,5 @@ MOUNTING PHASE METHODS
     2) render() : 
         - The render() methods is responsible for generating the components virtual DOM represention based on its current props and state.
         - It is called every time the component needs to be re-rendered, either because its props or state have changed, or because a parent components has been re-rendered
+
+    3) 

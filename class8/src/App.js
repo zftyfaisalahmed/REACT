@@ -6,22 +6,23 @@ class App extends Component{
   // eslint-disable-next-line no-useless-constructor
   constructor(props){
     super(props)
-    this.state = {
-      name : "Mounting phase"
-    }
+    // this.state = {
+    //   name : "Mounting phase"
+    // }
   }
 
   mount(){
     ReactDOM.render(
       <React.StrictMode>
-        <Counter counterProps = {this.state.name}></Counter>
+        <Counter counterProps = {0}></Counter>
       </React.StrictMode>,
       document.getElementById("renderHere")
     );
   }
 
   unmount(){
-
+    console.log("Component Unmounted")
+    ReactDOM.unmountComponentAtNode(document.getElementById("renderHere"))
   }
 
   render(){
@@ -38,11 +39,11 @@ class App extends Component{
             </div>
             <div className="row my-3">
               <div className="col">
-                <p>{this.state.name}</p>
+                {/* <p>{this.state.name}</p> */}
                 <button className="btn btn-outline-success" onClick={this.mount.bind(this)}>
                 Mount
                 </button>
-                <button className="btn btn-outline-danger float-end">
+                <button className="btn btn-outline-danger float-end" onClick={this.unmount.bind(this)}>
                 UnMount
                 </button>
                 <hr />
