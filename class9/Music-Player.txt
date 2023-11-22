@@ -1,0 +1,17 @@
+Dpendieces (package.json) 
+    Step 1 : npx create-react-app
+    Step 2 : npm install bootstrap
+    Step 3 : npm install bootstrap-icons
+    Step 4 : npm i react-router-dom
+
+Components 
+    1) Menu.jsx - used to create a navigation bar.
+    2) 
+
+React-Router-Dom : 
+    1) Browserrouter
+        -> BrowserRouter is a router implementation that uses the HTML-5 history API (pushstate, replaceState, and the popstate event) to keep your UI in sync with the URI
+
+    2) Router : 
+        -> It enables the creation of single-page web or mobile apps that allow navigation without refreshing the page.
+        
