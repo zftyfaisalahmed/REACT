@@ -13,7 +13,7 @@ function App() {
       <Routes>
           <Route path={'/Music'} element={<Music />}/>
           <Route path={'/contact'} element={<Contact />}/>
-          <Route path={'/track'} element={<Track />}/>
+          <Route path={'/track/:artistId'} element={<Track />}/>
           <Route path={'/*'} element={<Pnf />}/>
       </Routes>
     </BrowserRouter>

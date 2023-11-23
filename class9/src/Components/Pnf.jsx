@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pnf = () => {
   return (
-    <div>Pnf</div>
+    <div className='container'>Pnf</div>
   )
 }
 
