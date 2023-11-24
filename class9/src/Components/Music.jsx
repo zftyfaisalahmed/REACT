@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import token from '../Config/token';
 import Artist from './../Screen/Artist';
+import Search from './../Screen/search';
 
 //useState => state hook, useEffect => a hook to call api request
 // https://api.spotify.com/v1/search?q=spb&type=artist
@@ -26,7 +27,7 @@ const Music = () => {
   }
 
   useEffect(() => {
-    searchArtist('Ilayaraj');
+    searchArtist('Justin Bieber');
   }, [])
 
 
@@ -39,6 +40,9 @@ const Music = () => {
           </div>
         </div>
       </div>
+
+      <Search searchName= {searchArtist}></Search>
+
       <div className="row">
         {
           artist.map((item, index) => {
