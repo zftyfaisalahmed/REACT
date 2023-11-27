@@ -5,7 +5,7 @@ function Footer(){
         <footer>
             <div class="container">
                 <div class="col-lg-12">
-                    <p>Copyright & 2023 Be-practical. All rights reserved. &nbsp;Design: <a href="http://localhost:3000/"> Faisal Ahmed</a></p>
+                    <p>Copyright & 2023. All rights reserved. <br />Design: <a href="http://localhost:3000/"> Faisal Ahmed</a></p>
                 </div>
             </div>
         </footer>
