@@ -12,6 +12,11 @@ const Track = () => {
 
   const [view, setView] = useState(false);
 
+  // Player states
+  const [audio, setAudio] = useState(false)
+  const [playing, setPlaying] = useState(false)
+  const [preUrl, setPreUrl] = useState(false)
+
   const searchTracks = async () => {
     await 
     fetch(`${URL}/v1/artists/${params.artistId}/top-tracks?market=IN`, {
@@ -33,11 +38,40 @@ const Track = () => {
     searchTracks()
   },[]);
 
+  // To handle play
+  const playAudio = (url) => {
+    console.log(url)
+    const myAudio = new Audio(url);
+
+    setAudio(myAudio)
+    setPreUrl(url)
+
+    if (!playing) {
+      myAudio.play();
+      setPlaying(true)
+    } else {
+      audio.pause();
+
+      if (preUrl === url) {
+        setPlaying(false) //play ! pause
+      } else {
+        myAudio.play();
+        setPlaying(true)
+        setPreUrl(url)
+        setAudio(myAudio)
+      }
+    }
+  }
+
+  // To handle icon
   const trackIcon =  (url)  => {
     if(! url)
       return <strong className='text-danger'>No Tracks</strong>
+    if (playing && url === preUrl)
+      return <button className='btn btn-outline-warning'> <i className='bi bi-pause-fill'></i>Pause</button>
     else
-      return <strong className='text-success'>Tracks</strong>
+      return <button className='btn btn-outline-success'> <i className='bi bi-play-fill'></i>Play</button>
+
   } 
 
   const msTotime = (ms) => {
@@ -56,9 +90,9 @@ const Track = () => {
 
       <div className='row'>
         <div className="col">
-          <butt className="btn btn-outline-secondary float-end" onClick={() => setView(!view)}>
+          <button className="btn btn-outline-secondary float-end" onClick={() => setView(!view)}>
             {view ? 'LIST' : 'CARD'}
-          </butt>
+          </button>
         </div>
       </div>
 
@@ -71,7 +105,7 @@ const Track = () => {
               <div className='col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 my-3' token={index}>
                 {
                   view ? (
-                    <div className='card'>
+                    <div className='card' onClick={() => {playAudio(preview_url)}}>
                   <img src={album ? album.images[0].url : ''} alt="" className='img-fluid card-img-top' style={{height : "350px"}}/>
                   <div className='card-body'>
                     <h5 className='text-success text-center'>
@@ -83,7 +117,7 @@ const Track = () => {
                   </div>
                 </div>
                   ) : (
-                    <ul className="list-group">
+                    <ul className="list-group" onClick={() => {playAudio(preview_url)}}>
                       <li className="list-group-item">
                         <div className="row">
                           <div className="col-md-3 col-sm-3">
@@ -98,7 +132,7 @@ const Track = () => {
                             </p>
                           </div>
                           <div className='col-md-3 col-sm-3'>
-                            <span className='float-end'>
+                            <span className='float-center'>
                               {trackIcon(preview_url)}
                             </span>
                           </div>

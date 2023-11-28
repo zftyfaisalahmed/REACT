@@ -27,7 +27,7 @@ const Music = () => {
   }
 
   useEffect(() => {
-    searchArtist('Justin Bieber');
+    searchArtist('Dhanush');
   }, [])
 
 
