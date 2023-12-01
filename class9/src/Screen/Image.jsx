@@ -3,7 +3,7 @@ const noImage = "https://www.lemontreehotels.com/images/dining/567x416No_Image_A
 
 const Image = (props) => {
   return (
-    <img src={props.data ? props.data.url : noImage} alt="" style={{height: "350px"}}/>
+    <img src={props.data ? props.data.url : noImage} alt="" style={{height: "350px"}} className='align-center'/>
   )
 }
 

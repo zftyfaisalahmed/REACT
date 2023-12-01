@@ -1,36 +1,24 @@
-import React, { useRef } from 'react'
-import {LoginUser} from '../data/User'
-
+import React, {useRef} from 'react'
 
 const Login = () => {
+
   const fEmail = useRef();
   const fPass = useRef();
 
-  const submitHandler = async (e) => {
-    e.preventDefault();
-    const data = {
-      email : fEmail.current.value,
-      password : fPass.current.value
-    }
-    console.log('login data =', data)
-
-    await LoginUser(data)
-  }
   return (
-    <div className='container'>
+    <div className="container">
         <div className="row">
             <div className="col">
-                <div className="display-3 text-dark">
+                <h3 className="display-3 text-dark text-center">
                     Login
-                </div>
+                </h3>
             </div>
         </div>
-
         <div className="row">
           <div className="col-xs-12 col-sm-12 offset-md-3 col-md-6 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 offset-xxl-3 col-xxl-6">
             <div className="card">
               <div className="card-body">
-                <form action="" autoComplete='off' onSubmit={submitHandler}>
+                <form action="" autoComplete='off'>
                   <div className="form-group my-3">
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="email" className='form-control' required ref={fEmail}/>
@@ -40,7 +28,7 @@ const Login = () => {
                     <input type="password" className='form-control' id='password' name='password' required ref={fPass}/>
                   </div>
                   <div className="form-group">
-                    <input type="submit" value="Register" className='btn btn-outline-success' />
+                    <input type="submit" value="Login" className='btn btn-outline-success' />
                   </div>
                 </form>
               </div>
