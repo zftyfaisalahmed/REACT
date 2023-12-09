@@ -1,8 +1,9 @@
 import React from 'react'
 
 class Ex8 extends React.Component{
+    // eslint-disable-next-line no-useless-constructor
     constructor(props){
-        super()
+        super(props)
     }
 
     render(){

@@ -1,11 +1,12 @@
 import React from "react";
+
 function testFunction(name){
   return name.toLowerCase();
 }
 
 function App() {
 
-  const title = "Welcome to react";
+  const title = "Welcome to react ";
   const endTitle = "Be-practical tech sol..!"
 
   const heading1 = React.createElement("h1", {id: "title1" }, "Heading-1")
