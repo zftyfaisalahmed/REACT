@@ -19,6 +19,7 @@ const Update = () => {
         console.log(data)
         setTask(data);
     }, [])
+    
     const submitHandler = async (event) => {
         event.preventDefault();
         console.log("Update task", task)

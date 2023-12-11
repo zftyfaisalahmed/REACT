@@ -1,4 +1,4 @@
-/* import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
@@ -43,7 +43,7 @@ const readAllTask = () => {
 }
 
 // delete single task
-const deleteTask = (id) => {
+const deleteTask = async (id) => {
     try {
         const taskIndex = tasks.findIndex((item) => item.id === id)
         tasks.splice(taskIndex, 1);
@@ -55,12 +55,32 @@ const deleteTask = (id) => {
     }
 }
 
-export { createTask, readAllTask, deleteTask }; */
+// get single data
+const readSingleTask = (id) => {
+    const data = tasks.find((item) => item.id == id);
+    return data
+}
+
+// update task
+const updateTask = (id, task) => {
+    try {
+        const taskIndex = tasks.findIndex((item) => item.id == id)
+        tasks.splice(taskIndex, 1, task)
+        saveTask(tasks)
+        toast.success("Updated successfully")
+        window.location.href  = '/'
+    } catch (error) {
+        toast.error(error.message)
+    }
+}
+
+export { createTask, readAllTask, deleteTask, readSingleTask, updateTask };
 
 
-import { toast } from "react-toastify";
+/* import { toast } from "react-toastify";
 
 const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
 // console.log("TASK ARRAY = ",tasks);
 
 // RAND ID() Generator
@@ -68,6 +88,7 @@ const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
     return Math.floor(Math.random()*1000);
  }
 // console.log("Rand ID" , randTd());
+
 
 
 // Save the Task
@@ -81,6 +102,7 @@ const createTask = async (task) => {
 
     try {
         const extTask = tasks.find((item)=>item.title === task.title);
+        
         if (extTask) {
             toast.warning('Task is already exists')
         } else {
@@ -99,10 +121,12 @@ const createTask = async (task) => {
     }
 }
 
+
 //  getAll Data
 const readAllTask = () => {
     return tasks;
 };
+
 // Update a task
 // const updateTask = async (id, data) => {
 //     let index = tasks.findIndex((item) => item.id == id);
@@ -127,6 +151,7 @@ const deleteTask = async (id) => {
     }
 };
 
+
 // get single data
 const readSingleTask = (id) => {
     const data = tasks.find((item) => item.id == id);
@@ -145,4 +170,4 @@ const updateTask = (id, task) => {
         toast.error(error.message)
     }
 }
-export {createTask, readAllTask, deleteTask, readSingleTask, updateTask};
+export {createTask, readAllTask, deleteTask, readSingleTask, updateTask}; */

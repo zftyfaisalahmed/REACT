@@ -8,7 +8,7 @@ import { ToastContainer } from 'react-toastify';
 // import Home from "./components/Home";
 // import ProtectedRoute from './authGaurd/ProtectedRoute';
 // import { Route } from 'react-router-dom';
-// import Create from './components/Create';
+import Create from './Components/Create';
 // import Update from './components/Update';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
       <Routes>
         {/* <Route element={<ProtectedRoute></ProtectedRoute>}>
         </Route> */}
+        <Route path={'/create'} element={<Create />} />
         <Route path={'/login'} element={<Login />}/>
         <Route path={'/register'} element={<Register/>}/>
         <Route path={'/*'} element={<Pnf />}/>
