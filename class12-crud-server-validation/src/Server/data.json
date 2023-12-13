@@ -1,11 +1,11 @@
 {
-    "contacts" : [
-        {
-            "name" : "",
-            "email" : "",
-            "image" : "",
-            "mobile" : "",
-            "address" : ""
-        }
-    ]
+  "contacts": [
+    {
+      "name": "Faisal Ahmed",
+      "email": "aarav@gmail.com",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+      "mobile": "9876543210",
+      "address": "Bengalure"
+    }
+  ]
 }

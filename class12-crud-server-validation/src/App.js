@@ -10,6 +10,7 @@ import { ToastContainer } from 'react-toastify';
 // import { Route } from 'react-router-dom';
 import Create from './Components/Create';
 // import Update from './components/Update';
+import Home from './Components/Home';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         {/* <Route element={<ProtectedRoute></ProtectedRoute>}>
         </Route> */}
+        <Route path={'/Home'} element={<Home />} />
         <Route path={'/create'} element={<Create />} />
         <Route path={'/login'} element={<Login />}/>
         <Route path={'/register'} element={<Register/>}/>

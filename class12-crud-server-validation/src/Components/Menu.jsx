@@ -29,7 +29,7 @@ const Menu = () => {
                         <Fragment>
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <NavLink to={"/"} className="nav-link">Home</NavLink>
+                                    <NavLink to={"/Home"} className="nav-link">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink to={"/Create"} className="nav-link">Create</NavLink>
