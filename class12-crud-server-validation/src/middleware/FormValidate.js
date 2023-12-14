@@ -111,7 +111,8 @@ function UserForm(){
             console.log("New Contact = ",contact);
 
             // Post Handler
-           await axios.post(`${baseUrl}/contacts`, contact)
+           await axios
+            .post(`${baseUrl}/contacts`, contact)
             .then((res)=>{
                 console.log(res)
                 setContact(initState);

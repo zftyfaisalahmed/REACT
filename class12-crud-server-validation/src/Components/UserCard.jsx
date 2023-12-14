@@ -18,13 +18,13 @@ const UserCard = (props) => {
             })
             .catch((error) => {toast.error(error.message)})
         } else {
-            toast.error("You have deleted")
+            toast.warning("You have cancel to delete")
         }
     }
   return (
-    <div className='col-xs-12 col-sm-12 col-md-4 col-l-4 col-xl-4 col-xxl-4'>
+    <div className='col-xs-12 col-sm-12 col-md-4 col-l-4 col-xl-4 col-xxl-4 my-3'>
         <div className="card">
-            <img src={image} alt={name} className='imag-fluid shadow'/>
+            <img src={image} alt={name} className='imag-fluid shadow' style={{height: "390px"}}/>
             <div className="card-body">
                 <h5 className="text-center text-uppercase my-3">
                     {name}
@@ -65,7 +65,7 @@ const UserCard = (props) => {
                 </ul>
             </div>
             <div className="card-footer">
-                <NavLink className="btn btn-sm btn-info">
+                <NavLink to={`/Update/${id}`} className="btn btn-sm btn-info">
                     <i className='bi bi-pen'></i>
                 </NavLink>
                 <button className='btn btn-sm btn-danger float-end'>
