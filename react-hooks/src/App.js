@@ -18,8 +18,8 @@ function App() {
     <Routes>
       <Route path={'/Ex1'} element={<Ex1 />}/>
       <Route path={'/Ex2'} element={<Ex2 />}/>
-      <Route path={'/Ex3'} element={<Ex3 />}/>
-      <Route path={'/Ex4'} element={<Ex4 />}/>
+      <Route path={'/Ex3'} element={<Ex3 itemsPerPage={9} />}/>
+      <Route path={'/Ex4'} element={<Ex4 itemsPerPage={5} />}/>
       <Route path={'/Ex5'} element={<Ex5 />}/>
       <Route path={'/Ex6'} element={<Ex6 />}/>
       <Route path={'/Ex7'} element={<Ex7 />}/>
