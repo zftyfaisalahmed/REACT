@@ -9,6 +9,7 @@ import Ex4 from './Components/Ex4';
 import Ex3 from './Components/Ex3';
 import Ex2 from './Components/Ex2';
 import Ex7 from './Components/Ex7';
+import Ex9 from './Components/Ex9';
 import Pnf from './Components/Pnf';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path={'/Ex6'} element={<Ex6 />}/>
       <Route path={'/Ex7'} element={<Ex7 />}/>
       <Route path={'/Ex8'} element={<Ex8 />}/>
+      <Route path={'/Ex9'} element={<Ex9 />}/>
       <Route path={'/*'} element={<Pnf />}/>
     </Routes>
   </BrowserRouter>    

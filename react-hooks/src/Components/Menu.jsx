@@ -37,6 +37,9 @@ const Menu = () => {
                     <li className='nav-item'>
                         <NavLink to={"/Ex8"} className='nav-link'>Ex8</NavLink>
                     </li>
+                    <li className='nav-item'>
+                        <NavLink to={"/Ex9"} className='nav-link'>Ex9</NavLink>
+                    </li>
                 </ul>
             </div>
         </div>
